@@ -16,7 +16,7 @@
 		<ion-card-header>
 			<ion-card-title>{{ ad.info.name }}</ion-card-title>
 		</ion-card-header>
-
+		<img [src]="ad.pictures.main"/>
 		<ion-card-content>
 			{{ ad.info.description.substring(0,100) }} ...
 		</ion-card-content>

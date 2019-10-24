@@ -18,7 +18,7 @@ export class CategoriesPage implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.categories = this.categoriasService.getCategories().pipe(tap(console.log));
+    this.categories = this.categoriasService.getCategories();
   }
 
 }

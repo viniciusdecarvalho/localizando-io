@@ -12,6 +12,7 @@ import { AdvertisementPage } from './advertisements.page';
     FormsModule,
     RouterModule.forChild([{ path: '', component: AdvertisementPage }])
   ],
-  declarations: [AdvertisementPage]
+  declarations: [AdvertisementPage],
+  entryComponents: [AdvertisementPage]
 })
 export class AdvertisementPageModule {}

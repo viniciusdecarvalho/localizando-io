@@ -1,9 +1,13 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Tab Three
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content></ion-content>
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let category of categories | async">
+      <ion-thumbnail slot="start">
+        <img [src]="category.pictures.icon | pathResolver | async">
+      </ion-thumbnail>
+      <ion-label>
+        {{category.name}}
+      </ion-label>
+      <ion-badge slot="end" color="primary">{{category.numberOfAds()}}</ion-badge>
+    </ion-item>
+  </ion-list>
+</ion-content>
